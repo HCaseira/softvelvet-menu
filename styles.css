@@ -17,6 +17,7 @@ html, body {
 body {
 	display: flex;
 	flex-flow: column;
+	font-size: 17px;
 	background-image: url("assets/background.jpg");
 	background-size: contain;
 	background-repeat: round;
@@ -28,6 +29,7 @@ body {
 	padding-top: env(safe-area-inset-top, 10px);
 	background-color: var(--body-background-color);
 	box-shadow: 0 5px 10px rgb(0 0 0 / 50%);
+	z-index: 1;
 }
 #header img {
 	margin-top: 10px;
@@ -45,31 +47,45 @@ body {
 	padding-bottom: env(safe-area-inset-bottom, 10px);
 	background-color: var(--body-background-color);
 	box-shadow: 0 -5px 10px rgb(0 0 0 / 50%);
+	z-index: 1;
 }
 
-.section-page {
-
-}
 .section-page-subSection {
-	font-weight: 400;
-	color: var(--highlight-color);
+	display: flex;
+	flex-flow: column;
 	padding: 30px 10px 5px 10px;
 }
+.section-page-subSection > name {
+	font-weight: 400;
+	color: var(--highlight-color);
+}
+.section-page-subSection > info {
+	font-size: 0.9em;
+}
+
 .section-page-product {
 	display: flex;
 	flex-flow: row;
 	padding: 5px 10px;
 }
-.section-page-product > name {
+.section-page-product-name {
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+	padding-right: 5px;
+}
+.section-page-product-name > name {
 	font-weight: 400;
 	color: var(--text-color-lighter);
 }
-.section-page-product > info {
-	flex: 1;
+.section-page-product-name > name > info {
 	font-size: 0.9em;
-	text-align: left;
 	color: var(--text-color);
 	padding: 0px 5px;
+}
+.section-page-product-name > description {
+	font-size: 0.9em;
+	color: var(--text-color);
 }
 .section-page-product > value {
 	text-align: right;
@@ -95,6 +111,9 @@ body {
 .section-button > div {
 	display: flex;
     flex-flow: column;
+}
+.section-button > div > label {
+	padding-top: 5px;
 }
 
 ::-webkit-scrollbar {

@@ -5,159 +5,67 @@ const Menu = [{
     {
       subSection: "SUMOS NATURAIS",
       menu: [
-      {
-        name: "Laranja", info: "", price: 4.5
-      },{
-        name: "Laranja-Morango", info: "", price: 6
-      },{
-        name: "Morango", info: "", price: 6
-      },{
-        name: "Frutos vermelhos", info: "(banana, morango, amoras, framboesas, mirtilos)", price: 6.5
-      },{
-        name: "Banana-Manga", info: "", price: 6.5
-      },{
-        name: "Banana-Laranja", info: "", price: 6
-      },{
-        name: "Limonada", info: "", price: 4.5
-      },{
-        name: "Limonada Menta", info: "", price: 5
-      },{
-        name: "Limonada Morango", info: "", price: 6
-      },
+      { name: "Laranja", info: "", price: 4.5 },
+      { name: "Laranja-Morango", info: "", price: 6 },
+      { name: "Morango", info: "", price: 6 },
+      { name: "Frutos vermelhos", description: "(banana, morango, amoras, framboesas, mirtilos)", price: 6.5 },
+      { name: "Banana-Manga", info: "", price: 6.5 },
+      { name: "Banana-Laranja", info: "", price: 6 },
+      { name: "Limonada", info: "", price: 4.5 },
+      { name: "Limonada Menta", info: "", price: 5 },
+      { name: "Limonada Morango", info: "", price: 6 },
     ]},
     {
       subSection: "BATIDOS",
       menu: [
-      {
-        name: "Morango", info: "", price: 5.5
-      },{
-        name: "Banana-Morango", info: "", price: 6
-      },{
-        name: "Frutos Vermelhos", info: "(morangos, framboesas, amoras, mirtilos)", price: 6.5
-      },
+      { name: "Morango", info: "", price: 5.5 },
+      { name: "Banana-Morango", info: "", price: 6 },
+      { name: "Frutos Vermelhos", description: "(morangos, framboesas, amoras, mirtilos)", price: 6.5 },
     ]},
     {
       subSection: "SUMOS/REFRIGERANTES",
       menu: [
-      {
-        name: "Água tónica Schweppes", info: "", price: 2.5
-      },{
-        name: "Água tónica Fever Three", info: "", price: 4
-      },{
-        name: "Água tónica Nordic", info: "", price: 3.5
-      },{
-        name: "Ginger Ale", info: "", price: 2.5
-      },{
-        name: "Coca-cola", info: "", price: 2.5
-      },{
-        name: "Coca-cola zero", info: "", price: 2.5
-      },{
-        name: "7up", info: "", price: 2.5
-      },{
-        name: "Sumol", info: "(ananás; laranja)", price: 2.5
-      },{
-        name: "Red Bull", info: "", price: 4.5
-      },{
-        name: "Guaraná", info: "", price: 2.5
-      },{
-        name: "Ice tea", info: "(limão; pêssego; manga-ananás)", price: 2.5
-      },{
-        name: "Néctar Compal", info: "(maçã; pera; frutos vermelhos; manga-laranja, pêssego)", price: 2.5
-      },
+      { name: "Água tónica Schweppes", info: "", price: 2.5 },
+      { name: "Água tónica Fever Three", info: "", price: 4 },
+      { name: "Água tónica Nordic", info: "", price: 3.5 },
+      { name: "Ginger Ale", info: "", price: 2.5 },
+      { name: "Coca-cola", info: "", price: 2.5 },
+      { name: "Coca-cola zero", info: "", price: 2.5 },
+      { name: "7up", info: "", price: 2.5 },
+      { name: "Sumol", description: "(ananás; laranja)", price: 2.5 },
+      { name: "Red Bull", info: "", price: 4.5 },
+      { name: "Guaraná", info: "", price: 2.5 },
+      { name: "Ice tea", description: "(limão; pêssego; manga-ananás)", price: 2.5 },
+      { name: "Néctar Compal", description: "(maçã; pera; frutos vermelhos; manga-laranja, pêssego)", price: 2.5 },
     ]},
     {
       subSection: "CAFETARIA",
       menu: [
-      {
-        name: "Café",
-        info: "",
-        price: 1
-      },{
-        name: "Café Bombom",
-        info: "(café com leite condensado)",
-        price: 2
-      },{
-        name: "Descafeinado",
-        info: "",
-        price: 1
-      },{
-        name: "Abatanado",
-        info: "",
-        price: 1.5
-      },{
-        name: "Café duplo",
-        info: "",
-        price: 2
-      },{
-        name: "Café c/Natas",
-        info: "",
-        price: 3
-      },{
-        name: "Meia de Leite",
-        info: "",
-        price: 2.5
-      },{
-        name: "Galão",
-        info: "",
-        price: 2.5
-      },{
-        name: "Capuccino",
-        info: "",
-        price: 3.5
-      },{
-        name: "Mazagran",
-        info: "(café, sumo limão, açúcar)",
-        price: 4.5
-      },{
-        name: "Irish coffee",
-        info: "(café, whisky irlandês, natas)",
-        price: 6.5
-      },{
-        name: "Carioca de Limão",
-        info: "",
-        price: 1.5
-      },{
-        name: "Chá",
-        info: "(camomila; cidreira; cidreira-mel; gengibre-limão; lúcia-lima; tília; verde; preto; frutos vermelhos; menta; príncipe; baunilha-caramelo; limão)",
-        price: 2.5
-      },{
-        name: "Chá",
-        info: "(duas chávenas)",
-        price: 3.5
-      },{
-        name: "Chocolate Quente",
-        info: "(clássico)",
-        price: 4
-      },{
-        name: "Chocolate Quente",
-        info: "(chocolate branco; chocolate menta; chocolate caramelo; chocolate maçã-pinhões; chocolate avelã; branco avelã)",
-        price: 4.5
-      },
+      { name: "Café", info: "", price: 1 },
+      { name: "Café Bombom", description: "(café com leite condensado)", price: 2 },
+      { name: "Descafeinado", info: "", price: 1 },
+      { name: "Abatanado", info: "", price: 1.5 },
+      { name: "Café duplo", info: "", price: 2 },
+      { name: "Café c/Natas", info: "", price: 3 },
+      { name: "Meia de Leite", info: "", price: 2.5 },
+      { name: "Galão", info: "", price: 2.5 },
+      { name: "Capuccino", info: "", price: 3.5 },
+      { name: "Mazagran", description: "(café, sumo limão, açúcar)", price: 4.5 },
+      { name: "Irish coffee", description: "(café, whisky irlandês, natas)", price: 6.5 },
+      { name: "Carioca de Limão", info: "", price: 1.5 },
+      { name: "Chá", description: "(camomila; cidreira; cidreira-mel; gengibre-limão; lúcia-lima; tília; verde; preto; frutos vermelhos; menta; príncipe; baunilha-caramelo; limão)", price: 2.5 },
+      { name: "Chá", info: "(duas chávenas)", price: 3.5 },
+      { name: "Chocolate Quente", info: "(clássico)", price: 4 },
+      { name: "Chocolate Quente", description: "(chocolate branco; chocolate menta; chocolate caramelo; chocolate maçã-pinhões; chocolate avelã; branco avelã)", price: 4.5 },
     ]},
     {
       subSection: "ÁGUAS",
       menu: [
-      {
-        name: "Água Luso s/gás",
-        info: "(0.50l)",
-        price: 1.5
-      },{
-        name: "Pedras Salgadas",
-        info: "",
-        price: 2
-      },{
-        name: "Pedras Salgadas",
-        info: "(limão; frutos vermelhos; maracujá; tangerina)",
-        price: 2.5
-      },{
-        name: "Castelo",
-        info: "",
-        price: 2
-      },{
-        name: "Frize",
-        info: "(limão; groselha; pepino)",
-        price: 2.5
-      },
+      { name: "Água Luso s/gás", info: "(0.50L)", price: 1.5 },
+      { name: "Pedras Salgadas", info: "", price: 2 },
+      { name: "Pedras Salgadas", description: "(limão; frutos vermelhos; maracujá; tangerina)", price: 2.5 },
+      { name: "Castelo", info: "", price: 2 },
+      { name: "Frize", description: "(limão; groselha; pepino)", price: 2.5 },
     ]},
   ]
 }, {
@@ -176,14 +84,14 @@ const Menu = [{
       subSection: "GARRAFA",
       menu: [
         { name: "Heineken s/ álcool", price: 2.00 },
-        { name: "Sagres Branca", info: "(0.33l)", price: 2.50 }, 
+        { name: "Sagres Branca", info: "(0.33L)", price: 2.50 }, 
         { name: "Sagres Radler", price: 2.50 },
         { name: "Sagres Bohemia", price: 2.50 },
         { name: "Sagres Bohemia bock", price: 2.50 },
         { name: "Sagres Bohemia puro malte", price: 2.50 },
         { name: "Sagres s/álcool", price: 2.00 },
-        { name: "Somersby", info: "(maçã; frutos vermelhos)", price: 4.00 }, 
-        { name: "Guinness", info: "(0.44l)", price:5.00 },
+        { name: "Somersby", description: "(maçã; frutos vermelhos)", price: 4.00 }, 
+        { name: "Guinness", info: "(0.44L)", price:5.00 },
         { name: "Desperados", price: 4.00 },
         { name: "Corona", price: 4.00 },
         { name: "Budvar", price: 3.00 },
@@ -194,7 +102,7 @@ const Menu = [{
         { name: "Estrella GALICIA", price: 2.00 },
         { name: "Oharas STOUT", price: 4.50 },
         { name: "Oharas IPA", price: 4.50 },
-        { name: "Fullers", info: "(0.50l)", price: 5.00 },
+        { name: "Fullers", info: "(0.50L)", price: 5.00 },
     ]},
   ]
 }, {
@@ -263,78 +171,78 @@ const Menu = [{
     {
       subSection: "COCKTAIL'S",
       menu: [
-      { name: "Caipirinha", info: "(cachaça, lima, açúcar amarelo)", price: 6 },
-      { name: "Caipiroska", info: "(vodka, lima, açúcar amarelo)", price: 6 },
-      { name: "Caipiblack", info: "(vodka black, lima)", price: 6 },
-      { name: "Caipirão", info: "(beirão e lima) ", price: 6 },
-      { name: "Morangoska", info: "(vodka, morango, açúcar amarelo)", price: 6.5 },
-      { name: "Kiwiroska", info: "(vodka, kiwi, açúcar amarelo)", price: 6.5 },
-      { name: "Cuba Livre", info: "(rum, coca-cola) ", price: 7 },
-      { name: "Mojito", info: "(rum especial, sumo limão, hortelã, água c/gás, açúcar)", price: 8 },
-      { name: "Margarita", info: "(tequila, cointreau, sumo limão, sal no copo)", price: 8 },
-      { name: "Pinã-Colada", info: "(rum, sumo de ananás, batida de côco)", price: 8 },
-      { name: "Tequila Sunrise", info: "(tequila, sumo laranja, groselha)", price: 8 },
-      { name: "Blue Lagoon", info: "(vodka, blue coracão, sumo de limão)", price: 8.5 },
-      { name: "Expresso Martini", info: "(licor de café, vodka, café expresso)", price: 8 },
-      { name: "Sex on the Beach", info: "(vodka, licor de morango, sumo de laranja)", price: 9.5 },
-      { name: "Aperol Spritz", info: "", price: 8 },
-      { name: "Dry Martini", info: "(vermute seco, gin London dry)", price: 6 },
-      { name: "Negroni", info: "(gin, campari, vermute tinto)", price: 8 }, // TODO: rever preço
-      { name: "Cosmopolitan", info: "(vodka, cointreau, sumo de arando, sumo de lima)", price: 8 },
-      { name: "Alexander Sister", info: "(gin, menta, natas)", price: 7.5 },
-      { name: "Long Island Iced Tea", info: "(vodka, tequila, rum, triple sec, gin, sumo limão, cola)", price: 10 },
+        { name: "Caipirinha", description: "(cachaça, lima, açúcar amarelo)", price: 6 },
+        { name: "Caipiroska", description: "(vodka, lima, açúcar amarelo)", price: 6 },
+        { name: "Caipiblack", description: "(vodka black, lima)", price: 6 },
+        { name: "Caipirão", description: "(beirão e lima) ", price: 6 },
+        { name: "Morangoska", description: "(vodka, morango, açúcar amarelo)", price: 6.5 },
+        { name: "Kiwiroska", description: "(vodka, kiwi, açúcar amarelo)", price: 6.5 },
+        { name: "Cuba Livre", description: "(rum, coca-cola) ", price: 7 },
+        { name: "Mojito", description: "(rum especial, sumo limão, hortelã, água c/gás, açúcar)", price: 8 },
+        { name: "Margarita", description: "(tequila, cointreau, sumo limão, sal no copo)", price: 8 },
+        { name: "Pinã-Colada", description: "(rum, sumo de ananás, batida de côco)", price: 8 },
+        { name: "Tequila Sunrise", description: "(tequila, sumo laranja, groselha)", price: 8 },
+        { name: "Blue Lagoon", description: "(vodka, blue coracão, sumo de limão)", price: 8.5 },
+        { name: "Expresso Martini", description: "(licor de café, vodka, café expresso)", price: 8 },
+        { name: "Sex on the Beach", description: "(vodka, licor de morango, sumo de laranja)", price: 9.5 },
+        { name: "Aperol Spritz", description: "", price: 8 },
+        { name: "Dry Martini", description: "(vermute seco, gin London dry)", price: 6 },
+        { name: "Negroni", description: "(gin, campari, vermute tinto)", price: 8 }, // TODO: rever preço
+        { name: "Cosmopolitan", description: "(vodka, cointreau, sumo de arando, sumo de lima)", price: 8 },
+        { name: "Alexander Sister", description: "(gin, menta, natas)", price: 7.5 },
+        { name: "Long Island Iced Tea", description: "(vodka, tequila, rum, triple sec, gin, sumo limão, cola)", price: 10 },
     ]},
     {
       subSection: "VERMUTES",
       menu: [
-      { name: "Martini Rosso/Bianco", info: "", price: 4 },
-      { name: "Martini Tónico", info: "", price: 6 },
+        { name: "Martini Rosso/Bianco", info: "", price: 4 },
+        { name: "Martini Tónico", info: "", price: 6 },
     ]},
     {
       subSection: "TEQUILA'S",
       menu: [
-      { name: "Olmeca", info: "", price: 7 },
-      { name: "Mezcal", info: "", price: 7 },
+        { name: "Olmeca", info: "", price: 7 },
+        { name: "Mezcal", info: "", price: 7 },
     ]},
     {
       subSection: "SANGRIAS",
       menu: [
-      { name: "Tinto/branca", info: "(1L/2L)", price: "13 €/23" },
-      { name: "Cidra com frutos vermelhos", info: "(1L/2L)", price: "14 €/22" },
-      { name: "Espumante com frutos vermelhos", info: "(1L/2L)", price: "17 €/32" },
-      { name: "Espumante Asti Gancia com frutos vermelhos", info: "(1L/2L)", price: "20 €/38" },
+        { name: "Tinto/branca", info: "(1L/2L)", price: "13 €/23" },
+        { name: "Cidra com frutos vermelhos", info: "(1L/2L)", price: "14 €/22" },
+        { name: "Espumante com frutos vermelhos", info: "(1L/2L)", price: "17 €/32" },
+        { name: "Espumante Asti Gancia com frutos vermelhos", info: "(1L/2L)", price: "20 €/38" },
     ]},
     {
       subSection: "GIN'S",
       subSectionInfo: "(nota: com água tónica premium acresce 2.00€)",
       menu: [
-        { name: "Bombay Saphire", info: "(limão, pau de canela)", price: 7.50 },
-        { name: "Bulldog", info: "(bagas de zimbro, limão)", price: 8.00 },
-        { name: "Nao", info: "(laranja, vagem de baunilha)", price: 8.50 },
-        { name: "Beefeater 24", info: "(laranja, pau de canela)", price:8.50 },
-        { name: "Caorunn", info: "(maçã)", price:8.00 },
-        { name: "Gordons", info: "(limão, pau de canela)", price:6.50 },
-        { name: "Gordons pink", info: "(morangos e amora)", price: 7.50 },
-        { name: "Hendrick's", info: "(pepino, hortelã)", price:8.50 },
-        { name: "Vigne", info: "(uva)", price: 9.50 },
-        { name: "Mare", info: "(tomilho, alecrim)", price:9.00 },
-        { name: "Nordés", info: "(uva, louro)", price:8.50 },
-        { name: "Monkey 47", info: "(amora, morango)", price:15.00 },
-        { name: "Martin Miller's", info: "(laranja, limão, pau de canela)", price: 8.50 },
-        { name: "Sharish", info: "(maçã)", price: 9.00 },
-        { name: "Sharish Blue", info: "(morango, amora)", price: 10.50 },
-        { name: "Tanqueray", info: "(limão, lima)", price:7.50 },
-        { name: "Tanqueray Ten", info: "(maçã, lima)", price:10.50 },
-        { name: "Tanqueray Sevilha", info: "(laranja, canela)", price:8.00 },
-        { name: "Saffron", info: "(café, laranja)", price:9.50 },
-        { name: "Jodhpur Reserve", info: "(café, laranja)", price: 14.50 },
-        { name: "Larios 12", info: "(limão, lima)", price: 8.00 },
-        { name: "Macronesian", info: "(gengibre, limão)", price:9.50 },
-        { name: "Mombasa Club", info: "(morango, hortelã)", price: 11.00 },
-        { name: "London Nº 1", info: "(limão, vagem de baunilha)", price:11.50 },
-        { name: "London Nº 3", info: "(lima)", price:  9.50 },
-        { name: "Bloom", info: "(laranja, canela)", price: 9.50 },
-        { name: "Azor", info: "(gengibre, limão)", price:9.00 },
+        { name: "Bombay Saphire", description: "(limão, pau de canela)", price: 7.50 },
+        { name: "Bulldog", description: "(bagas de zimbro, limão)", price: 8.00 },
+        { name: "Nao", description: "(laranja, vagem de baunilha)", price: 8.50 },
+        { name: "Beefeater 24", description: "(laranja, pau de canela)", price:8.50 },
+        { name: "Caorunn", description: "(maçã)", price:8.00 },
+        { name: "Gordons", description: "(limão, pau de canela)", price:6.50 },
+        { name: "Gordons pink", description: "(morangos e amora)", price: 7.50 },
+        { name: "Hendrick's", description: "(pepino, hortelã)", price:8.50 },
+        { name: "Vigne", description: "(uva)", price: 9.50 },
+        { name: "Mare", description: "(tomilho, alecrim)", price:9.00 },
+        { name: "Nordés", description: "(uva, louro)", price:8.50 },
+        { name: "Monkey 47", description: "(amora, morango)", price:15.00 },
+        { name: "Martin Miller's", description: "(laranja, limão, pau de canela)", price: 8.50 },
+        { name: "Sharish", description: "(maçã)", price: 9.00 },
+        { name: "Sharish Blue", description: "(morango, amora)", price: 10.50 },
+        { name: "Tanqueray", description: "(limão, lima)", price:7.50 },
+        { name: "Tanqueray Ten", description: "(maçã, lima)", price:10.50 },
+        { name: "Tanqueray Sevilha", description: "(laranja, canela)", price:8.00 },
+        { name: "Saffron", description: "(café, laranja)", price:9.50 },
+        { name: "Jodhpur Reserve", description: "(café, laranja)", price: 14.50 },
+        { name: "Larios 12", description: "(limão, lima)", price: 8.00 },
+        { name: "Macronesian", description: "(gengibre, limão)", price:9.50 },
+        { name: "Mombasa Club", description: "(morango, hortelã)", price: 11.00 },
+        { name: "London Nº 1", description: "(limão, vagem de baunilha)", price:11.50 },
+        { name: "London Nº 3", description: "(lima)", price:  9.50 },
+        { name: "Bloom", description: "(laranja, canela)", price: 9.50 },
+        { name: "Azor", description: "(gengibre, limão)", price:9.00 },
     ]},
     {
       subSection: "RUM'S",
@@ -364,7 +272,7 @@ const Menu = [{
         { name: "Carolans", price: 6.00 },
         { name: "Malibu", price: 6.00 },
         { name: "Frangélico", price: 6.00 },
-        { name: "Bols", info: "(blue/banana/strawberry)", price: 6.50 },
+        { name: "Bols", description: "(blue/banana/strawberry)", price: 6.50 },
         { name: "Moscatel Favaios", price: 4.00 },
     ]},
     {
@@ -425,12 +333,12 @@ const Menu = [{
     {
       subSection: "CHAMPANHES",
       menu: [
-      { name: "Moet Chandon", info: "(garrafa)", price: 80 },
+        { name: "Moet Chandon", info: "(garrafa)", price: 80 },
     ]},
     {
       subSection: "ESPUMANTES",
       menu: [
-      { name: "Asti Gancia", info: "", price: 18 },
+        { name: "Asti Gancia", info: "", price: 18 },
     ]},
   ]
 }, {
@@ -451,7 +359,7 @@ const Menu = [{
         { name: "Tábua de presunto ibérico", price: 8.00 },
         { name: "Tábua de 2 queijos", price: 10.00 },
         { name: "Tábua de 5 queijos", price: 20.00 },
-        { name: "Couvert", info: "(azeitonas, pasta atum, manteiga de alho, pão)", price:  6.00 },
+        { name: "Couvert", description: "(azeitonas, pasta atum, manteiga de alho, pão)", price:  6.00 },
         { name: "Cesto pão", price: 1.50 },
         { name: "Pão Torrado", price: 2.00 },
         { name: "Azeitonas", price: 2.00 },
@@ -461,19 +369,19 @@ const Menu = [{
       subSection: "CARNE",
       subSectionInfo: "(NOTA: Informamos que a cozinha encerra às 22:30)",
       menu: [
-        { name: "Picanha", info: "(arroz, batata frita, feijão preto, farófia)", price:  15.50 },
+        { name: "Picanha", description: "(arroz, batata frita, feijão preto, farófia)", price:  15.50 },
         { name: "Bife da vazia", info: "(250gr)", price: 14.50 },
         { info: "• Opção: molho cervejeiro" },
         { info: "• Opções de acompanhamento: Risoto cogumelos/Linguine/Batata frita palito" },
         { name: "Peito de Frango marinado", price: 10.50 },
         { info: "• Opções de acompanhamento: Risoto cogumelos/Linguine/Batata frita palito" },
-        { name: "Bifana no prato", info: "(fruta, queijo, presunto, tomate, batata frita palito)", price:  10.00 },
+        { name: "Bifana no prato", description: "(fruta, queijo, presunto, tomate, batata frita palito)", price:  10.00 },
     ]},
     {
       subSection: "PASTA",
       menu: [
         { name: "Linguine de polvo e camarão", price: 18.90 },
-        { name: "Linguine Mediterrâneo", info: "(espargos, tomate cherry, mozarela, bacon, presunto)", price: 11.50 },
+        { name: "Linguine Mediterrâneo", description: "(espargos, tomate cherry, mozarela, bacon, presunto)", price: 11.50 },
         { name: "Penne de frango, espinafres e tomate cherry", price: 9.90 },
         { name: "Penne de frango com cogumelos", price: 11.50 },
     ]},
@@ -488,12 +396,12 @@ const Menu = [{
       subSection: "OMELETES",
       subSectionInfo: "(Acompanhamento: batata frita palito, tomate)",
       menu: [
-        { name: "Omelete Simples", info: "(cebola, salsa)", price: 6.00 },
-        { name: "Omelete de Queijo ou Fiambre", info: "(cebola, salsa, queijo ou fiambre)", price:  7.00 },
-        { name: "Omelete Mista", info: "(cebola, salsa, queijo, fiambre)", price: 8.00 },
-        { name: "Omelete de Presunto", info: "(cebola, salsa, queijo, presunto)", price: 11.00 },
-        { name: "Omelete de Frango", info: "(cebola, salsa, queijo, frango)", price: 11.00 },
-        { name: "Omelete de Camarão", info: "(cebola, salsa, queijo, camarão)", price: 12.00 },
+        { name: "Omelete Simples", description: "(cebola, salsa)", price: 6.00 },
+        { name: "Omelete de Queijo ou Fiambre", description: "(cebola, salsa, queijo ou fiambre)", price:  7.00 },
+        { name: "Omelete Mista", description: "(cebola, salsa, queijo, fiambre)", price: 8.00 },
+        { name: "Omelete de Presunto", description: "(cebola, salsa, queijo, presunto)", price: 11.00 },
+        { name: "Omelete de Frango", description: "(cebola, salsa, queijo, frango)", price: 11.00 },
+        { name: "Omelete de Camarão", description: "(cebola, salsa, queijo, camarão)", price: 12.00 },
     ]},
     {
       subSection: "EXTRAS",
@@ -527,10 +435,10 @@ const Menu = [{
     {
       subSection: "TOSTAS",
       menu: [
-        { name: "Tosta de Atum", info: "(atum, maionaise, queijo, manteiga e orégãos)", price:  7.00 },
-        { name: "Tosta de Frango", info: "(frango, maionaise, tomate, queijo, manteiga e orégãos)", price: 7.00 },
-        { name: "Tosta de Molho Pesto", info: "(molho pesto, presunto, tomate, queijo, manteiga e orégãos)", price: 6.50 },
-        { name: "Tosta Mista", info: "(queijo, fiambre, manteiga e orégãos)", price: 5.00 },
+        { name: "Tosta de Atum", description: "(atum, maionaise, queijo, manteiga e orégãos)", price:  7.00 },
+        { name: "Tosta de Frango", description: "(frango, maionaise, tomate, queijo, manteiga e orégãos)", price: 7.00 },
+        { name: "Tosta de Molho Pesto", description: "(molho pesto, presunto, tomate, queijo, manteiga e orégãos)", price: 6.50 },
+        { name: "Tosta Mista", description: "(queijo, fiambre, manteiga e orégãos)", price: 5.00 },
         { name: "Tosta de Queijo e Tomate", price: 5.50 },
         { name: "Tosta de Queijo e Presunto", price: 6.50 },
         { name: "Tosta de Queijo ou Fiambre", price: 4.50 },

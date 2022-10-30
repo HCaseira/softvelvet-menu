@@ -49,25 +49,46 @@ class Main {
     page.classList.add("section-page");
 
     for (let entry of section.content) {
-      let title = document.createElement("div");
-      title.classList.add("section-page-subSection");
+      let titleCol = document.createElement("div");
+      titleCol.classList.add("section-page-subSection");
+      page.appendChild(titleCol);
+
+      let title = document.createElement("name");
       title.innerHTML = entry.subSection;
-      page.appendChild(title);
+      titleCol.appendChild(title);
+
+      if (entry.subSectionInfo) {
+        let info = document.createElement("info");
+        info.innerHTML = entry.subSectionInfo;
+        titleCol.appendChild(info);
+      }
 
       for (let product of entry.menu) {
+        let nameCol = document.createElement("div");
+        nameCol.classList.add("section-page-product-name");
+
         let name = document.createElement("name");
         name.innerHTML = product.name ?? "";
+        nameCol.appendChild(name);
 
-        let info = document.createElement("info");
-        info.innerHTML = product.info ?? "";
+        if (product.info) {
+          let info = document.createElement("info");
+          info.innerHTML = product.info;
+          name.appendChild(info);
+        }
+
+        if (product.description) {
+          let description = document.createElement("description");
+          description.innerHTML = product.description;
+          nameCol.appendChild(description);
+        }
 
         let price = document.createElement("value");
         price.innerHTML = product.price ? product.price + " €" : "";
 
         let row = document.createElement("div");
         row.classList.add("section-page-product");
-        row.appendChild(name);
-        row.appendChild(info);
+        row.appendChild(nameCol);
         row.appendChild(price);
         page.appendChild(row);
       }
@@ -85,6 +106,7 @@ class Main {
     const screen = document.getElementById("screen");
     screen.innerHTML = "";
     screen.appendChild(this._sectionPages[idx]);
+    screen.scrollTo(0, 0);
   }
 }
 
