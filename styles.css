@@ -24,6 +24,8 @@ body {
 }
 
 #header {
+	display: flex;
+	flex-flow: row;
 	text-align: center;
 	padding: 10px;
 	padding-top: env(safe-area-inset-top, 10px);
@@ -34,6 +36,27 @@ body {
 #header img {
 	margin-top: 10px;
 	height: 42px;
+}
+
+#languages {
+	flex: 1;
+    display: flex;
+    flex-flow: column;
+	align-self: center;
+	align-items: end;
+	margin-top: 10px;
+}
+#languages > svg {
+	width: 40px;
+	/* filter: grayscale(1); */
+	border-radius: 4px;
+	padding: 2px;
+	cursor: pointer;
+}
+.selected-language {
+	filter: grayscale(0) !important;
+	cursor: initial;
+	display: none;
 }
 
 #screen {

@@ -3,7 +3,31 @@ class Main {
   static _sectionButtons;
 
   static init() {
+    this.buildLanguages();
     this.buildNavigation();
+  }
+
+  static buildLanguages() {
+    const holder = document.getElementById("languages");
+    holder.innerHTML = "";
+    const language = Resources.getLanguage();
+    const languages = Resources.getLanguages();
+
+    const buildLanguage = (key) => {
+      const obj = Resources.getSvg(key);
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      if (key === language) {
+        svg.classList.add("selected-language");
+      }
+      svg.setAttribute("viewBox", "0 0 " + obj.width + " " + obj.height);
+      svg.innerHTML = obj.inner;
+      svg.onclick = () => this.setLanguage(key);
+      holder.appendChild(svg);
+    };
+
+    for (let key of languages) {
+      buildLanguage(key);
+    }
   }
 
   static buildNavigation() {
@@ -11,6 +35,8 @@ class Main {
     this._sectionButtons = [];
 
     const navigator = document.getElementById("navigator");
+    navigator.innerHTML = "";
+
     for (let i = 0; i < Menu.length; i++) {
       let section = Menu[i];
       let page = this.buildSectionPage(section);
@@ -31,7 +57,7 @@ class Main {
     icon.innerHTML = section.icon;
 
     const name = document.createElement("label");
-    name.innerHTML = Strings.get(section.section);
+    name.innerHTML = Resources.getString(section.section);
 
     const column = document.createElement("div");
     column.appendChild(icon);
@@ -54,12 +80,12 @@ class Main {
       page.appendChild(titleCol);
 
       let title = document.createElement("name");
-      title.innerHTML = entry.subSection;
+      title.innerHTML = Resources.getString(entry.subSection);
       titleCol.appendChild(title);
 
       if (entry.subSectionInfo) {
         let info = document.createElement("info");
-        info.innerHTML = entry.subSectionInfo;
+        info.innerHTML = Resources.getString(entry.subSectionInfo);
         titleCol.appendChild(info);
       }
 
@@ -68,18 +94,18 @@ class Main {
         nameCol.classList.add("section-page-product-name");
 
         let name = document.createElement("name");
-        name.innerHTML = product.name ?? "";
+        name.innerHTML = Resources.getString(product.name ?? "");
         nameCol.appendChild(name);
 
         if (product.info) {
           let info = document.createElement("info");
-          info.innerHTML = product.info;
+          info.innerHTML = Resources.getString(product.info);
           name.appendChild(info);
         }
 
         if (product.description) {
           let description = document.createElement("description");
-          description.innerHTML = product.description;
+          description.innerHTML = Resources.getString(product.description);
           nameCol.appendChild(description);
         }
 
@@ -108,36 +134,9 @@ class Main {
     screen.appendChild(this._sectionPages[idx]);
     screen.scrollTo(0, 0);
   }
-}
 
-
-
-class Strings {
-  static _language;
-
-  static get(key) {
-    return this._strings[this.getLanguage()][key] ?? key;
-  }
-
-  static getLanguage() {
-    if (!this._language) {
-      // TODO: get the language from cookies?
-      this._language = "pt";
-    }
-    return this._language;
-  }
-
-  static setLanguage(lang) {
-    this._language = lang;
-    // TODO: create a language cookie?
-  }
-
-  static _strings = {
-    pt: {
-
-    },
-    en: {
-
-    }
+  static setLanguage(key) {
+    Resources.setLanguage(key);
+    this.init();
   }
 }
